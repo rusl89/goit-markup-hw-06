@@ -414,7 +414,7 @@ textarea:focus {
 .checkbox:checked + .icon {
     border-color: transparent;
     background-color: var(--accent);
-    background-image: url(/images/check.svg);
+    background-image: url(/images/sign.svg);
     background-size: contain;
     background-origin: border-box;
 }
