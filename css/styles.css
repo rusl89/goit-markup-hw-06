@@ -382,7 +382,8 @@ textarea:focus {
 
 }
 
-.form-checkbox .icon {
+.form-checkbox .checkbox-label::before {
+    content: '';
     display: inline-block;
     margin-right: 10px;
     width: 16px;
@@ -391,6 +392,13 @@ textarea:focus {
     border-radius: 4px;
 }
 
+.checkbox:checked ~ .checkbox-label::before {
+    border-color: transparent;
+    background-color: var(--accent);
+    background-image: url(../images/sign.svg);
+    background-size: contain;
+    background-origin: border-box;
+}
 .form-checkbox a {
     text-decoration: underline;
     color: var(--accent);   
@@ -413,13 +421,6 @@ textarea:focus {
 }
 
 
-.checkbox:checked + .icon {
-    border-color: transparent;
-    background-color: var(--accent);
-    background-image: url(../images/sign.svg);
-    background-size: contain;
-    background-origin: border-box;
-}
 
 .modal-button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
